@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Yoga Nikitan</title>
+
+  <meta name="keywords" content="yoga nikitan йога йоги йог медитации медитації йогічний осан дихальні практики вправи курси заняття ">
+  <meta name="description" content="Йога Niketan - оселя йоги, місце, де ніхто і ніщо не порушить ваш простір душевного комфорту. Йога Niketan - це система відновлення включає в себе різні направлення йоги, техніки та методики, сприятливо впливає на физичний, психічний, душевний стан людини надає омолоджуючий эфект, поднімає життєвий тонус. Йога не є релігіозною системою, а скоріше древньою наукою доповненою та систематизованою сучасною медициною.">
+
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/yoda-icon.jpg"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/lodash.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -132,8 +138,6 @@
       </div>
 
       <section class="instructors">
-        <!--<div class="&#45;&#45;back-opacity"></div>-->
-
         <div class="row">
           <figure class="__figure">
             <div class="__img-box">
@@ -147,6 +151,8 @@
             </div>
             <figcaption class="__figcaption">Олександр Романюк</figcaption>
           </figure>
+        </div>
+        <div class="row">
           <figure class="__figure">
             <div class="__img-box">
               <img class="__img" src="img/personal/safronova.jpg" alt="safronova" />
@@ -160,16 +166,25 @@
             <figcaption class="__figcaption">Оapга Ульяненко</figcaption>
           </figure>
         </div>
-
       </section>
     </section>
 
     <section class="galery">
 
+      <div class="slider" >
 
+        <div class="slider-for">
+          <div class="slider-for__box" ng-repeat="articleImg in article.imgUrl">
+            <img class="slider-for__img" ng-src="{{ articleImgPath }}{{ articleImg }}" alt="img">
+          </div>
+        </div>
 
-
-
+        <div class="slider-nav">
+          <div class="slider-nav__box" ng-repeat="articleImg in article.imgUrl">
+            <img class="slider-nav__img" ng-src="{{ articleImgPath }}{{ articleImg }}" alt="img">
+          </div>
+        </div>
+      </div>
 
     </section>
 

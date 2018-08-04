@@ -106,7 +106,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   padding: 50px 50px;
-  background: url("../img/back-ground.jpg") center center;
+  background: url("../img/header-back.jpg") center center;
   background-size: cover; }
 
 .header__titles {
@@ -210,7 +210,9 @@ p {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 40px 0; }
+  margin: 40px 0;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .yoga-program .__figure {
   z-index: 20;
@@ -286,10 +288,17 @@ p {
   z-index: 10; }
 
 .instructors {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
   background-size: cover;
-  width: 90%; }
+  width: 90%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .instructors .row {
   display: -webkit-box;
@@ -297,7 +306,11 @@ p {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 40px 0; }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1; }
 
 .instructors .__figure {
   z-index: 20;
@@ -315,7 +328,7 @@ p {
   -ms-flex-align: center;
   align-items: center;
   width: 200px;
-  margin: 0; }
+  margin: 0 20px; }
 
 .instructors .__figcaption {
   margin: 30px 0;

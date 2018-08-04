@@ -66,9 +66,8 @@ p {
 
 .header {
   display: flex;
-  //height: 50vh;
   padding: 50px 50px;
-  background: url("../img/back-ground.jpg") center center;
+  background: url("../img/header-back.jpg") center center;
   background-size: cover;
   &__titles {
     display: flex;
@@ -147,6 +146,7 @@ p {
     display: flex;
     justify-content: space-around;
     margin: 40px 0;
+    flex-wrap: wrap;
   }
   .__figure {
     z-index: 20;
@@ -210,21 +210,23 @@ p {
   }
 }
 
-
+// ======================== INSTRUCTORS
 
 .instructors {
-  //padding: 20px 50px 0;
-
-  display: block;
+  display: flex;
+  justify-content: center;
   position: relative;
   //background: url('../img/yoga-program-back.jpg') center center;
   background-size: cover;
   width: 90%;
+  flex-wrap: wrap;
 
   .row {
     display: flex;
     justify-content: space-around;
-    margin: 40px 0;
+    //margin: 40px 0;
+    flex-wrap: wrap;
+    flex: 1 1;
   }
   .__figure {
     z-index: 20;
@@ -233,7 +235,7 @@ p {
     justify-content: center;
     align-items: center;
     width: 200px;
-    margin: 0;
+    margin: 0 20px;
   }
   .__figcaption {
     margin: 30px 0;
@@ -257,6 +259,13 @@ p {
     min-width: 100%;
     //margin: 0 auto;
   }
+}
+
+// =========================== GALERY
+
+
+.galery {
+
 }
 
 
