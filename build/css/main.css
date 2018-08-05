@@ -105,8 +105,11 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 50px 50px;
-  background: url("../img/header-back.jpg") center center;
+  height: 80vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url("../img/header-back-2.jpg") 40% center no-repeat;
   background-size: cover; }
 
 .header__titles {
@@ -117,14 +120,18 @@ p {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 400px;
+  margin: 0 10%;
   text-shadow: 3px 3px 10px #000000;
   color: #4fe9ef; }
 
-.header .__title {
-  margin-bottom: 40px; }
+.header .__logo-img {
+  width: 400px; }
 
 .yoga-target {
   display: -webkit-box;
@@ -195,7 +202,7 @@ p {
 
 .yoga-target .targets .__yoga-siluet {
   display: block;
-  margin: -50px 0 -20px; }
+  margin: 50px 0 20px; }
 
 .yoga-program {
   padding: 20px 50px 0;
@@ -252,9 +259,10 @@ p {
   overflow: hidden; }
 
 .yoga-program .__img {
-  -o-object-fit: fill;
-  object-fit: fill;
-  height: 100%; }
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-height: 100%;
+  min-width: 100%; }
 
 .info {
   display: -webkit-box;

@@ -66,19 +66,25 @@ p {
 
 .header {
   display: flex;
-  padding: 50px 50px;
-  background: url("../img/header-back.jpg") center center;
+  height: 80vh;
+  align-items: center;
+  background: url("../img/header-back-2.jpg") 40% center no-repeat;
   background-size: cover;
   &__titles {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    //margin: 185px 0 0 10%;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    margin: 0 10%;
     text-shadow: 3px 3px 10px #000000;
     color: #4fe9ef;
   }
   .__title{
-    margin-bottom: 40px;
+    //margin-bottom: 40px;
+  }
+  .__logo-img {
+    width: 400px;
   }
 }
 
@@ -117,7 +123,6 @@ p {
       align-items: center;
       justify-content: space-around;
       width: 30%;
-      //height: 100%;
       h4 {
         font-weight: bold;
         text-align: center;
@@ -127,7 +132,7 @@ p {
     }
     .__yoga-siluet {
       display: block;
-      margin: -50px 0 -20px;
+      margin: 50px 0 20px;
     }
   }
 }
@@ -136,7 +141,6 @@ p {
 
 .yoga-program {
   padding: 20px 50px 0;
-
   display: block;
   position: relative;
   background: url('../img/yoga-program-back.jpg') center center;
@@ -173,11 +177,9 @@ p {
     overflow: hidden;
   }
   .__img {
-    //display: block;
-    object-fit: fill;
-    height: 100%;
-    //max-width: 100%;
-    //margin: 0 auto;
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
   }
 }
 
@@ -262,7 +264,6 @@ p {
 }
 
 // =========================== GALERY
-
 
 .galery {
 
