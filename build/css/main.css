@@ -125,13 +125,24 @@ p {
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  height: 400px;
+  height: 80%;
+  max-height: 400px;
+  width: 40%;
   margin: 0 10%;
   text-shadow: 3px 3px 10px #000000;
   color: #4fe9ef; }
 
+.header .__title {
+  font-size: 220%;
+  text-align: center; }
+
+.header .__description {
+  font-size: 220%;
+  text-align: center; }
+
 .header .__logo-img {
-  width: 400px; }
+  margin: 0 auto;
+  width: 80%; }
 
 .yoga-target {
   display: -webkit-box;
