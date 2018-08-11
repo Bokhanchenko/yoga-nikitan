@@ -57,9 +57,57 @@
       url: '../img/photo-gallery/IMAG2536.jpg'
     },
     {
-      id: 13,
+      id: 14,
       url: '../img/photo-gallery/sP1010169.jpg'
     },
+    {
+      id: 15,
+      url: '../img/photo-gallery/002.jpg'
+    },
+    {
+      id: 16,
+      url: '../img/photo-gallery/09.2015 044.jpg'
+    },
+    {
+      id: 17,
+      url: '../img/photo-gallery/09.2015 057.jpg'
+    },
+    {
+      id: 18,
+      url: '../img/photo-gallery/09.2015 076.jpg'
+    },
+    {
+      id: 19,
+      url: '../img/photo-gallery/09.2015 117.jpg'
+    },
+    {
+      id: 20,
+      url: '../img/photo-gallery/DSC00367.jpg'
+    },
+    {
+      id: 21,
+      url: '../img/photo-gallery/DSC00435.jpg'
+    },
+    {
+      id: 22,
+      url: '../img/photo-gallery/DSC03536.jpg'
+    },
+    {
+      id: 22,
+      url: '../img/photo-gallery/DSC03550.jpg'
+    },
+    {
+      id: 22,
+      url: '../img/photo-gallery/DSC05629.jpg'
+    },
+    {
+      id: 22,
+      url: '../img/photo-gallery/moi foto 034.jpg'
+    },
+    {
+      id: 22,
+      url: '../img/photo-gallery/moi foto 049.jpg'
+    }
   ];
 
   const sourceFor = document.getElementById("gallery-slider-for-template").innerHTML;

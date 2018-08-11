@@ -452,6 +452,27 @@ p {
   background: url("../img/yoga-program-back.jpg") center center;
   background-size: cover; }
 
+.yoga-program__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 20;
+  margin: 50px 0;
+  opacity: 1; }
+
+.yoga-program__title {
+  z-index: 20;
+  text-align: center;
+  color: #2C4987;
+  text-shadow: 3px 3px 10px #645fef; }
+
 .yoga-program .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,15 +498,26 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 200px;
+  width: 300px;
   margin: 0; }
 
 .yoga-program .__figcaption {
   margin: 30px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   line-height: 25px;
   font-weight: bold;
-  font-size: 1.2rem; }
+  color: #2C4987;
+  text-shadow: 3px 3px 10px #645fef; }
 
 .yoga-program .__img-box {
   display: -webkit-box;
@@ -629,7 +661,8 @@ p {
 .gallery .slider .slider-for {
   width: 80%;
   height: auto;
-  margin: 0 auto; }
+  margin: 0 auto;
+  cursor: pointer; }
 
 @media screen and (min-width: 768px) {
   .gallery .slider .slider-for {
@@ -670,7 +703,8 @@ p {
 .gallery .slider .slider-nav__box {
   height: 100px;
   outline: none;
-  padding: 20px 10px; }
+  padding: 20px 10px;
+  cursor: pointer; }
 
 @media screen and (min-width: 768px) {
   .gallery .slider .slider-nav__box {
