@@ -331,6 +331,27 @@ p {
   opacity: .6;
   z-index: 1; }
 
+.-color-1 {
+  color: #006C6D; }
+
+.-color-2 {
+  color: #68B04D; }
+
+.-color-3 {
+  color: #990E6D; }
+
+.-color-4 {
+  color: #01B1AF; }
+
+.-color-5 {
+  color: #310E99; }
+
+.-color-6 {
+  color: #E0570D; }
+
+.-color-7 {
+  color: #0DBA1E; }
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,8 +380,8 @@ p {
   max-height: 400px;
   width: 40%;
   margin: 0 10%;
-  text-shadow: 3px 3px 10px #000000;
-  color: #4fe9ef; }
+  color: #4fe9ef;
+  text-shadow: 3px 3px 10px #000000; }
 
 .header .__title {
   font-size: 220%;
@@ -407,8 +428,8 @@ p {
   padding: 10px;
   font-weight: bold;
   text-align: center;
-  text-shadow: 3px 3px 10px #4fe9ef;
-  color: #484cb7; }
+  color: #484cb7;
+  text-shadow: 3px 3px 10px #4fe9ef; }
 
 .yoga-target .targets {
   display: -webkit-box;
@@ -437,9 +458,9 @@ p {
 
 .yoga-target .targets .__section h4 {
   font-weight: bold;
+  font-family: lobster, cursive;
   text-align: center;
-  text-shadow: 3px 3px 10px #4fe9ef;
-  color: #484cb7; }
+  text-shadow: 3px 3px 10px aliceblue; }
 
 .yoga-target .targets .__yoga-siluet {
   display: block;
@@ -591,10 +612,10 @@ p {
   flex-wrap: wrap;
   -webkit-box-flex: 1;
   -ms-flex: 1 1;
-  flex: 1 1; }
+  flex: 1 1;
+  z-index: 10; }
 
 .instructors .__figure {
-  z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,15 +629,15 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 200px;
-  margin: 0 20px; }
+  width: 250px; }
 
 .instructors .__figcaption {
   margin: 30px 0;
   text-align: center;
   line-height: 25px;
   font-weight: bold;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  z-index: 10; }
 
 .instructors .__img-box {
   display: -webkit-box;
@@ -628,13 +649,44 @@ p {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
 
 .instructors .__img {
   -o-object-fit: cover;
   object-fit: cover;
   min-height: 100%;
-  min-width: 100%; }
+  min-width: 100%;
+  z-index: 10; }
+
+.instructors .__details {
+  display: block;
+  position: relative;
+  z-index: 50; }
+
+.instructors .__details-summary {
+  z-index: 50;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-shadow: 3px 3px 10px #c0bce2; }
+
+.instructors .__details-description {
+  position: absolute;
+  top: 120%;
+  left: -50%;
+  width: 200%;
+  background-color: white;
+  border: 5px solid lightgrey;
+  z-index: 200;
+  -webkit-box-shadow: 0 5px 15px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 15px 8px rgba(0, 0, 0, 0.6); }
 
 .gallery {
   display: -webkit-box;

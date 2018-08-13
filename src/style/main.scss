@@ -68,6 +68,37 @@ p {
   z-index: 1;
 }
 
+.-color-1 {
+  color: #006C6D;
+}
+
+.-color-2 {
+  color: #68B04D;
+}
+
+.-color-3 {
+  color: #990E6D;
+}
+
+.-color-4 {
+  color: #01B1AF;
+}
+
+.-color-5 {
+  color: #310E99;
+}
+
+.-color-6 {
+  color: #E0570D;
+}
+
+.-color-7 {
+  color: #0DBA1E;
+}
+
+
+
+
 // ======================== HEADER
 
 .header {
@@ -85,8 +116,8 @@ p {
     max-height: 400px;
     width: 40%;
     margin: 0 10%;
-    text-shadow: 3px 3px 10px #000000;
     color: #4fe9ef;
+    text-shadow: 3px 3px 10px #000000;
   }
   .__title{
     font-size: 220%;
@@ -121,8 +152,8 @@ p {
       padding: 10px;
       font-weight: bold;
       text-align: center;
-      text-shadow: 3px 3px 10px #4fe9ef;
       color: #484cb7;
+      text-shadow: 3px 3px 10px #4fe9ef;
     }
   }
 
@@ -139,9 +170,11 @@ p {
       width: 30%;
       h4 {
         font-weight: bold;
+        font-family: lobster, cursive;
         text-align: center;
-        text-shadow: 3px 3px 10px #4fe9ef;
-        color: #484cb7;
+        text-shadow: 3px 3px 10px aliceblue;
+        //color: #484cb7;
+        //text-shadow: #ffffff 3px 3px 0px, rgba(0, 0, 0, 0.2) 6px 6px 0px;
       }
     }
     .__yoga-siluet {
@@ -257,25 +290,21 @@ p {
   display: flex;
   justify-content: center;
   position: relative;
-  //background: url('../img/yoga-program-back.jpg') center center;
-  //background-size: cover;
   width: 90%;
   flex-wrap: wrap;
   .row {
     display: flex;
     justify-content: space-around;
-    //margin: 40px 0;
     flex-wrap: wrap;
     flex: 1 1;
+    z-index: 10;
   }
   .__figure {
-    z-index: 20;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    margin: 0 20px;
+    width: 250px;
   }
   .__figcaption {
     margin: 30px 0;
@@ -283,6 +312,7 @@ p {
     line-height: 25px;
     font-weight: bold;
     font-size: 1.2rem;
+    z-index: 10;
   }
   .__img-box {
     display: flex;
@@ -291,13 +321,39 @@ p {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    z-index: 10;
   }
   .__img {
     object-fit: cover;
-    //display: block;
     min-height: 100%;
     min-width: 100%;
-    //margin: 0 auto;
+    z-index: 10;
+  }
+  .__details {
+    display: block;
+    position: relative;
+    z-index: 50;
+  }
+  .__details-summary {
+    z-index: 50;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium";
+    user-select: none;
+    text-shadow: 3px 3px 10px #c0bce2;
+  }
+  .__details-description {
+    position: absolute;
+    top: 120%;
+    left: -50%;
+    width: 200%;
+    background-color: white;
+    border: 5px solid lightgrey;
+    z-index: 200;
+    //box-shadow: $imgShadow;
+    box-shadow: 0 5px 15px 8px rgba(0,0,0,0.6);
   }
 }
 
@@ -354,9 +410,6 @@ p {
     .slider-nav {
       margin: 0 auto;
       padding: 0 10px;
-      //-webkit-box-shadow: $imgShadowInset;
-      //-moz-box-shadow: $imgShadowInset;
-      //box-shadow: $imgShadowInset;
       &__box {
         height: 100px;
         outline: none;
@@ -405,4 +458,5 @@ p {
     text-align: center;
   }
 }
+
 
