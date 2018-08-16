@@ -49,10 +49,6 @@
       url: '../img/photo-gallery/DSCN2601.jpg'
     },
     {
-      id: 12,
-      url: '../img/photo-gallery/DSCN2602.jpg'
-    },
-    {
       id: 13,
       url: '../img/photo-gallery/IMAG2536.jpg'
     },
