@@ -801,6 +801,6 @@ p {
   width: 100%; }
 
 .contacts .__description {
-  padding: 50px;
+  padding: 50px 0;
   font-weight: bold;
   text-align: center; }

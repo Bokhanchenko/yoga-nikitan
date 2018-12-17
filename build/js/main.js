@@ -141,4 +141,8 @@
     variableWidth: true,
     centerMode: true,
   });
+
+  $(document).on('mousedown', () => {
+    $('.__details').removeAttr('open');
+  });
 })();
